@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     environment {
-        SONARQUBE_ENV = 'sonarqube-server'    // Name configured in Jenkins → Manage Jenkins → Configure System
+        SONARQUBE_ENV = 'sonar'    // Name configured in Jenkins → Manage Jenkins → Configure System
         AWS_REGION = "us-east-1"
-        ECR_REPO = "YOUR_AWS_ACCOUNT_ID.dkr.ecr.us-east-1.amazonaws.com/endtoend-app"
+        ECR_REPO = "334712111310.dkr.ecr.us-west-1.amazonaws.com/springboot-app"
         IMAGE_TAG = "v1"
     }
 
